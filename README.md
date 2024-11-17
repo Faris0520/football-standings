@@ -1,4 +1,4 @@
-# Football Leagues Tables Using Python Flask
+# Football Leagues Standings Using Python Flask
 
 https://futbol.farisdaffa.id
 
