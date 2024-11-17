@@ -29,7 +29,7 @@ body {
     justify-content: center;
     gap: 15px;
     position: relative;
-    background-image: url("./image.png");
+    background-image: url("https://raw.githubusercontent.com/Faris0520/football-standings/refs/heads/main/static/Screenshot%202024-11-17%20190600.png");
     background-size: cover; /* Mengatur ukuran background agar memenuhi elemen */
     background-position: center; /* Menempatkan background di tengah */
     padding: 20px; /* Tambahkan padding jika ingin ruang tambahan di sekitar judul */
