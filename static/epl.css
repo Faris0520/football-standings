@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("https://raw.githubusercontent.com/Faris0520/epl-table-flask/refs/heads/main/static/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+.main {
+    background: rgba(255, 255, 255, 0.864);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+.judul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    background-image: url("https://raw.githubusercontent.com/Faris0520/epl-table-flask/refs/heads/main/static/image.png");
+    background-size: cover; /* Mengatur ukuran background agar memenuhi elemen */
+    background-position: center; /* Menempatkan background di tengah */
+    padding: 20px; /* Tambahkan padding jika ingin ruang tambahan di sekitar judul */
+    border-radius: 10px; /* Membuat sudut elemen menjadi bulat */
+}
+
+.judul .logo {
+    width: 40px;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.team-cell {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+}
+
+.team-cell img {
+    margin-right: 10px;
+}
+
+.klasemen-main {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.rank {
+    position: relative;
+    padding: 5px;
+}
+
+.rank-with-note {
+    border-left: 7px solid; /* Memberikan border berwarna di sebelah kiri angka */
+    padding-left: 10px; /* Memberikan jarak antara border dan angka */
+}
+
+.teks {
+    position: fixed;
+    right: 10px;
+    bottom: 11px;
+    color: #000000;
+    font-size: 12px;
+    background-color: rgb(233, 233, 233);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.teks2 {
+    position: fixed;
+    left: 10px;
+    bottom: 11px;
+    color: #000000;
+    font-size: 12px;
+    background-color: rgb(233, 233, 233);
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang navbar */
+    padding: 10px; /* Padding di dalam navbar */
+    border-radius: 10px; /* Sudut bulat */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan */
+    position: absolute; /* Posisi absolut untuk menempatkan navbar */
+    top: 20px; /* Jarak dari atas */
+    left: 50%; /* Menempatkan di tengah */
+    transform: translateX(-50%); /* Menggeser ke kiri untuk benar-benar di tengah */
+    z-index: 1000; /* Menempatkan di atas elemen lain */
+}
+
+.navbar ul {
+    list-style-type: none; /* Menghilangkan bullet points */
+    display: flex; /* Mengatur item dalam satu baris */
+    gap: 20px; /* Jarak antar item */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+}
+
+.navbar a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #333; /* Warna teks */
+    font-weight: bold; /* Teks tebal */
+    transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+.navbar a:hover {
+    color: #007bff; /* Warna saat hover */
+}
+
+/* Gaya untuk tautan aktif */
+.navbar a.active {
+    color: #000000; /* Warna teks hitam saat aktif */
+    border-bottom: 2px solid #000000; /* Garis bawah hitam saat aktif */
+}
